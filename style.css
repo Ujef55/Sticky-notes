@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&family=Ubuntu&display=swap'); 
+
 * {
     padding: 0;
     margin: 0;
@@ -18,9 +20,41 @@ body {
 }
 
 .container1 {
+    font-family: 'ubuntu';
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.container3 {
+    font-family: 'kalam';
+    font-size: 25px;
+    position: absolute;
+    top: 26%;
+    left: 40%;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.2);
+}
+
+i {
+    color: grey;
+    font-size: 25px;
+    padding: 2px;
+    cursor: pointer;
+    margin: 2px;
+  }
+
+.icons {
+    position: absolute;
+    right: 1%;
+    top: 2%;
 }
