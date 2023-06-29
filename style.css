@@ -29,6 +29,7 @@ body {
 }
 
 .container3 {
+    display: none;
     font-family: 'kalam';
     font-size: 25px;
     position: absolute;
