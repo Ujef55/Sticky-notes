@@ -28,6 +28,16 @@ body {
     gap: 8px;
 }
 
+.container2 {
+    font-family: 'kalam';
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
 .container3 {
     display: none;
     font-family: 'kalam';
