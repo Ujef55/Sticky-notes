@@ -30,7 +30,6 @@ body {
 
 .container2 {
     font-family: 'kalam';
-    font-size: 20px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -68,4 +67,15 @@ i {
     position: absolute;
     right: 1%;
     top: 2%;
+}
+
+.notes {
+    width: 250px;
+    height: 250px;
+    font-size: 26px;
+    font-family: 'kalam';
+    padding: 25px;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.50);
 }
