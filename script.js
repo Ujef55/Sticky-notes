@@ -24,4 +24,9 @@ closeButton.addEventListener('click', () => {
     container3.style.display  = 'none';
 })
 
+// create notes feature
+
+checkButton.addEventListener('click', () => {
+    console.log('check button clicked')
+})
 
