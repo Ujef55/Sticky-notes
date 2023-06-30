@@ -7,7 +7,7 @@
   
 
 body {
-    background-color: rgb(239, 229, 141);
+    background-color: rgb(239, 235, 198);
 }
 
 .button {
@@ -36,10 +36,12 @@ body {
 .container2 {
     font-family: 'kalam';
     display: flex;
+    height: 200px;
+    width: 200px;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: 5%; 
+    margin-left: 5%;
 }
 
 .container3 {
