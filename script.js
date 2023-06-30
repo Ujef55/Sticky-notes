@@ -27,37 +27,34 @@ closeButton.addEventListener("click", () => {
 checkButton.addEventListener("click", () => {
     const notes = document.querySelector("#textNote").value;
     const div = document.createElement("div");
-    const h1 = document.createElement("h1");
+    const h1 = document.createElement("h1");    
 
-    if (notes === '') {
-        alert('Please write notes');
-    } else {
-        h1.setAttribute(
-            "style",
-            "width: 250px;",
-            "height: 250px;",
-            "font-size: 26px;",
-            `font-family: 'kalam';`,
-            "padding: 25px;",
-            "margin-top: 10px;",
-            "overflow: hidden;",
+    h1.innerHTML = notes;
+
+    h1.setAttribute(
+        "style",
+        "width: 250px;",
+        "height: 250px;",
+        "font-size: 26px;",
+        "padding: 25px;",
+        "margin-top: 15px;",
+        "overflow: hidden;",
+        "boxShadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.50)",
         );
-    
-    
-        h1.innerHTML = notes;
-        div.appendChild(h1);
-        container2.insertAdjacentElement("beforeend", div);
-    
-        div.style.height = ('250px');
-        div.style.width = ('250px');
-        div.style.padding = ('10px');
-        div.style.boxShadow = ('0px 10px 24px 0px rgba(0, 0, 0, 0.50)')
 
-        div.style.margin = margin();
-        div.style.backgroundColor = color();
-        div.style.rotate = rotate();
-    }
+    div.style.margin = margin();
+    div.style.transform = rotate();
+    div.style.backgroundColor = color();
 
+
+    div.appendChild(h1);
+    container2.insertAdjacentElement("beforeend", div);
+
+   
+    div.style.height = ('400px');
+    div.style.width = ('400px');
+    div.style.padding = ('10px');
+    div.style.boxShadow = ('0px 10px 24px 0px rgba(0, 0, 0, 0.50)')
 
 });
 
