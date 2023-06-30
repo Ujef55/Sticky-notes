@@ -33,7 +33,7 @@ checkButton.addEventListener('click', () => {
     const div = document.createElement('div');
     const h1 = document.createElement('h1');
 
-    h1.setAttribute('class', 'notes')
+    container2.setAttribute('class', 'notes')
 
     div.innerHTML = notes;
     div.appendChild(h1);
