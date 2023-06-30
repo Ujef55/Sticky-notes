@@ -7,7 +7,7 @@
   
 
 body {
-    background-color: rgb(239, 235, 198);
+    background-color: #c68c53a8;
 }
 
 .button {
@@ -36,8 +36,6 @@ body {
 .container2 {
     font-family: 'kalam';
     display: flex;
-    height: 200px;
-    width: 200px;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -56,10 +54,10 @@ body {
 textarea {
     outline: none;
     border: none;
-    width: 275px;
-    height: 275px;
+    width: 235px;
+    height: 235px;
     padding: 40px 25px 25px 25px;
-    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.50);
 }
 
 i {
@@ -75,3 +73,4 @@ i {
     right: 1%;
     top: 2%;
 }
+
