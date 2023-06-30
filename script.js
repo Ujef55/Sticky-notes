@@ -1,7 +1,9 @@
 const addButton = document.querySelector('#addBtn');
 const checkButton = document.querySelector('.check-icon');
 const closeButton = document.querySelector('.close-icon');
+const container2 = document.querySelector('.container2');
 const container3 = document.querySelector('.container3');
+
 
 
 
@@ -27,6 +29,11 @@ closeButton.addEventListener('click', () => {
 // create notes feature
 
 checkButton.addEventListener('click', () => {
-    console.log('check button clicked')
-})
+    const notes = document.querySelector('#textNote').value;
+    const div = document.createElement('div');
+    const h1 = document.createElement('h1');
 
+    div.textContent = notes;
+    div.appendChild(h1);
+    container2.appendChild(div);
+})
