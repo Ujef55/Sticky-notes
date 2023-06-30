@@ -35,5 +35,5 @@ checkButton.addEventListener('click', () => {
 
     div.textContent = notes;
     div.appendChild(h1);
-    container2.appendChild(div);
+    container2.insertAdjacentElement('beforeend', div);
 })
