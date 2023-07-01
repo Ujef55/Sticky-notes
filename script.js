@@ -24,6 +24,8 @@ closeButton.addEventListener("click", () => {
     container3.style.display = "none";
 });
 
+
+
 // create notes feature
 
 checkButton.addEventListener("click", () => {
@@ -53,11 +55,17 @@ checkButton.addEventListener("click", () => {
     div.appendChild(h1);
     container2.insertAdjacentElement("beforeend", div);
 
+    document.querySelector("#textNote").value = "";
+
    
     div.style.height = ('330px');
     div.style.width = ('330px');
     div.style.padding = ('10px');
     div.style.boxShadow = ('0px 10px 24px 0px rgba(0, 0, 0, 0.50)')
+
+    clearAll.addEventListener('click', () => {
+        div.remove();
+    })
 
 });
 
@@ -86,8 +94,4 @@ function rotate() {
 }
 
 
-// clear all button
 
-clearAll.addEventListener('click', () => {
-    
-})
