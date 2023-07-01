@@ -1,6 +1,8 @@
 const addButton = document.querySelector("#addBtn");
+const clearAll = document.querySelector('#clearBtn');
 const checkButton = document.querySelector(".check-icon");
 const closeButton = document.querySelector(".close-icon");
+const mainContainer = document.querySelector('.main-container');
 const container2 = document.querySelector(".container2");
 const container3 = document.querySelector(".container3");
 
@@ -27,7 +29,8 @@ closeButton.addEventListener("click", () => {
 checkButton.addEventListener("click", () => {
     const notes = document.querySelector("#textNote").value;
     const div = document.createElement("div");
-    const h1 = document.createElement("h1");    
+    const h1 = document.createElement("h1");   
+
 
     h1.innerHTML = notes;
 
@@ -51,8 +54,8 @@ checkButton.addEventListener("click", () => {
     container2.insertAdjacentElement("beforeend", div);
 
    
-    div.style.height = ('400px');
-    div.style.width = ('400px');
+    div.style.height = ('330px');
+    div.style.width = ('330px');
     div.style.padding = ('10px');
     div.style.boxShadow = ('0px 10px 24px 0px rgba(0, 0, 0, 0.50)')
 
@@ -81,3 +84,10 @@ function rotate() {
     const randomRotate = ["rotate(3deg)", "rotate(1deg)", "rotate(-1deg)", "rotate(-3deg)", "rotate(-5deg)", "rotate(-8deg)"];
     return randomRotate[Math.floor(Math.random() * randomRotate.length)];
 }
+
+
+// clear all button
+
+clearAll.addEventListener('click', () => {
+    
+})
